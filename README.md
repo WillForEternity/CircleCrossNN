@@ -39,7 +39,8 @@ Here are some examples of circles and crosses that can be generated. Using rough
    - `nn->activations[i]` is an array of doubles for layer i
    - Size: `layer_sizes[i]`
 
-In the weight matrix access nn->weights[i-1][k * nn->layer_sizes[i] + j]:
+i, j, and k in  `nn->weights[i-1][k * nn->layer_sizes[i] + j]` :
+
 * i-1: Selects the weight matrix between layers i-1 and i
 * k: Represents the neuron in the previous layer (row of the weight matrix)
 * j: Represents the neuron in the current layer (column of the weight matrix)
