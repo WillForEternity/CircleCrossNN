@@ -1,12 +1,14 @@
 # Circles and Crosses !! xoxo
 
+The universe is filled with patterns. Neural networks are structures created from linking together a large amount of very simple machines together and tuning their behavior based on their performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns. 
+
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
 
 For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction: 
 
 --
 
-## Here are some examples of circles and crosses that can be generated. 
+## Here are some examples of circles and crosses that can be generated: 
 
 ![CircleCrossNN](X0X0.png)
 
@@ -18,14 +20,14 @@ Using rough calculations, I have estimated that about 2 million unique crosses a
 - **Sigmoid Activation Function**: Implements both sigmoid and its derivative.
 - **Matrix Multiplication, Forward Propagation, and Backward Propagation**: All done by hand
 - **Adaptive Learning Rate**: Implements a decay-based learning rate adjustment.
-- **Random Image Generation**: Creates cross and circle images for training and testing.
-- **Console-based Visualization**: Displays generated images in the console.
+- **Random Image Generation**: Synthetic Ddtaset
+- **Console-based Visualization**: Displays generated images in the command line console.
 
 ## Key Functions
 
 - `init_network`: Initializes the neural network structure.
 - `forward_propagation`: Performs forward pass through the network.
-- `backward_propagation`: Implements the backpropagation algorithm.
+- `backward_propagation`: Implements backprop 
 - `adjust_learning_rate`: Adapts the learning rate based on epoch and error.
 - `generate_image`: Creates random cross or circle images for training/testing.
 - `draw_line`: Utility function for image generation.
