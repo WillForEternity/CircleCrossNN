@@ -10,7 +10,7 @@ For instructions on how to run, scroll down to the bottom and find `Quick Run`. 
 
 ![CircleCrossNN](X0X0.png)
 
-Using rough calculations, I have estimated that about 2 million unique crosses and 20 thousand unique circles can be generated in this way. This is a testament to the network's ability to fit to a dataset of high nonlinearity and dimensionality, finding its own hidden representations of how to identify circles and crosses.
+Using rough calculations, I have estimated that about 2 million unique crosses and 20 thousand unique circles can be generated in this way (Circles look the same if they are rotated, crosses don't). This is a testament to the network's ability to fit to a dataset of high nonlinearity and dimensionality, finding its own hidden representations of how to identify circles and crosses.
 
 ## Features
 
