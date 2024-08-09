@@ -2,7 +2,7 @@
 
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
 
-For instructions on how to run, scroll down to the bottom. Now for, an in-depth introduction -
+For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction -
 
 Here are some examples of circles and crosses that can be generated. Using rough calculations, I have estimated that about 1 million unique crosses and 20 thousand unique circles can be generated in this way. This is a testament to the networks ability to fit to a dataset of high nonlinearity and dimensionality, finding its own representations of how to identify circles and crosses.
 
@@ -144,7 +144,7 @@ So, why can we say that the derivative of sigmoid(x) is equal to (1 - sigmoid(x)
 
 I've provided the differentiation process for the sigmoid derivative, I apologize if the handwriting is difficult to read:
 
-![CircleCrossNN](notebook.jpg)
+![CircleCrossNN](Notebook.jpg)
 
 ## Network Architecture (easily tunable)
 
@@ -179,7 +179,7 @@ I've provided the differentiation process for the sigmoid derivative, I apologiz
 
 The network typically achieves an accuracy of over 90% on the test set after training.
 
-## Quick Run
+# Quick Run
 
 Copy the code from my `CircleCrossnnLRdecay.c` file and paste it into a .c file of your own, say `circlecross.c`.
 
