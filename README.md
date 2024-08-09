@@ -12,7 +12,7 @@ Here are some examples of circles and crosses that can be generated. Using rough
 
 ## Features
 
-- **Dynamic Memory Allocation**: Utilizes `safe_malloc` for robust memory management.
+- **Dynamic Memory Allocation**: Utilizes `safe_malloc` for memory management.
 - **Sigmoid Activation Function**: Implements both sigmoid and its derivative.
 - **Matrix Multiplication, Forward Propagation, and Backward Propagation**: Custom implementations for training.
 - **Adaptive Learning Rate**: Implements a decay-based learning rate adjustment.
@@ -145,6 +145,24 @@ So, why can we say that the derivative of sigmoid(x) is equal to (1 - sigmoid(x)
 I've provided the differentiation process for the sigmoid derivative, I apologize if the handwriting is difficult to read:
 
 ![CircleCrossNN](Notebook.jpg)
+
+### Learning Rate Update
+
+The learning rate is dynamically adjusted during training using the `adjust_learning_rate` function:
+
+```c
+double adjust_learning_rate(double current_rate, int epoch, double error) {
+    double new_rate = INITIAL_LEARNING_RATE / (1 + DECAY_RATE * epoch);
+    if (new_rate < MIN_LEARNING_RATE) {
+        new_rate = MIN_LEARNING_RATE;
+    }
+    return new_rate;
+}
+```
+
+This formula reduces the learning rate over time. As epoch increases, the denominator increases, causing new_rate to decrease.
+INITIAL_LEARNING_RATE (default: 0.9) sets the starting point.
+DECAY_RATE (default: 0.15) controls how quickly the rate decreases.
 
 ## Network Architecture (easily tunable)
 
