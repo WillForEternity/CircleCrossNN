@@ -19,6 +19,16 @@ Here are some examples of circles and crosses that can be generated. Using rough
 - **Random Image Generation**: Creates cross and circle images for training and testing.
 - **Console-based Visualization**: Displays generated images in the console.
 
+## Key Functions
+
+- `init_network`: Initializes the neural network structure.
+- `forward_propagation`: Performs forward pass through the network.
+- `backward_propagation`: Implements the backpropagation algorithm.
+- `adjust_learning_rate`: Adapts the learning rate based on epoch and error.
+- `generate_image`: Creates random cross or circle images for training/testing.
+- `draw_line`: Utility function for image generation.
+- `print_image`: Visualizes the generated images in the console.
+
 ## Implementation of Mathematics (i.e. Matrix Operations, Nonlinear Functions, Forward and Backwards Prop, etc.)
 
 ### Data Structures
@@ -171,16 +181,6 @@ DECAY_RATE (default: 0.15) controls how quickly the rate decreases.
 3. Hidden Layer 2: 20 neurons
 4. Hidden Layer 3: 20 neurons
 5. Output Layer: 2 neurons (cross or circle)
-
-## Key Functions
-
-- `init_network`: Initializes the neural network structure.
-- `forward_propagation`: Performs forward pass through the network.
-- `backward_propagation`: Implements the backpropagation algorithm.
-- `adjust_learning_rate`: Adapts the learning rate based on epoch and error.
-- `generate_image`: Creates random cross or circle images for training/testing.
-- `draw_line`: Utility function for image generation.
-- `print_image`: Visualizes the generated images in the console.
 
 ## Training Process
 
