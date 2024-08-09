@@ -19,7 +19,7 @@ Here are some examples of circles and crosses that can be generated. Using rough
 - **Random Image Generation**: Creates cross and circle images for training and testing.
 - **Console-based Visualization**: Displays generated images in the console.
 
-## Implementation of Matrix Operations 
+## Implementation of Mathematics (i.e. Matrix Operations, Nonlinear Functions, Forward and Backwards Prop, etc.)
 
 ### Data Structures
 
