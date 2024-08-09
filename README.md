@@ -2,7 +2,7 @@
 
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
 
-For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction 
+For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction: 
 
 --
 
