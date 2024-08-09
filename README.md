@@ -2,13 +2,15 @@
 
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
 
-For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction -
+For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction 
 
-Here are some examples of circles and crosses that can be generated. Using rough calculations, I have estimated that about 1 million unique crosses and 20 thousand unique circles can be generated in this way. This is a testament to the networks ability to fit to a dataset of high nonlinearity and dimensionality, finding its own representations of how to identify circles and crosses.
+--
 
-### Here are some examples of synthetically generated circles and crosses (screenshots of testing):  
+## Here are some examples of circles and crosses that can be generated. 
 
 ![CircleCrossNN](X0X0.png)
+
+Using rough calculations, I have estimated that about 2 million unique crosses and 20 thousand unique circles can be generated in this way. This is a testament to the network's ability to fit to a dataset of high nonlinearity and dimensionality, finding its own hidden representations of how to identify circles and crosses.
 
 ## Features
 
