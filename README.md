@@ -195,9 +195,13 @@ DECAY_RATE (default: 0.15) controls how quickly the rate decreases.
    - Adjust learning rate.
 3. After training, test the network on new examples.
 
-## Performance
+## Future Improvements 
 
-The network typically achieves an accuracy of over 90% on the test set after training.
+- Add a third output class for no circle or cross 
+- Implement batch training rather than just stochastic gradient descent for improved efficiency.
+- Extend the network to classify more shapes or real-world images using a dataset.
+- Add convolutional layers.
+  
 
 # Quick Run
 
@@ -220,7 +224,6 @@ The program will train the network and then test it on new examples, displaying 
 ### Here’s what it should look like during training: 
 
 ![CircleCrossNN](training.png)
-
 
 
 
