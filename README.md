@@ -8,7 +8,7 @@ For instructions on how to run, scroll down to the bottom and find `Quick Run`. 
 
 --
 
-## Here are some examples of circles and crosses that can be generated: 
+## Here are some examples of crosses and circles that can be generated: 
 
 ![CircleCrossNN](X0X0.png)
 
