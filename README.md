@@ -12,10 +12,9 @@ Here are some examples of circles and crosses that can be generated. Using rough
 
 ## Features
 
-- **Custom Neural Network Architecture**: Implements a 5-layer neural network (1 input layer, 3 hidden layers, 1 output layer).
 - **Dynamic Memory Allocation**: Utilizes `safe_malloc` for robust memory management.
 - **Sigmoid Activation Function**: Implements both sigmoid and its derivative.
-- **Forward and Backward Propagation**: Custom implementations for training.
+- **Matrix Multiplication, Forward Propagation, and Backward Propagation**: Custom implementations for training.
 - **Adaptive Learning Rate**: Implements a decay-based learning rate adjustment.
 - **Random Image Generation**: Creates cross and circle images for training and testing.
 - **Console-based Visualization**: Displays generated images in the console.
