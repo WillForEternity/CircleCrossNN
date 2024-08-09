@@ -2,6 +2,8 @@
 
 The universe is filled with patterns. Neural networks are structures created from linking together a large amount of very simple machines together and tuning their behavior based on their performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns. 
 
+--
+
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
 
 For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction: 
@@ -12,7 +14,7 @@ For instructions on how to run, scroll down to the bottom and find `Quick Run`. 
 
 ![CircleCrossNN](X0X0.png)
 
-Using rough calculations, I have estimated that about 2 million unique crosses and 20 thousand unique circles can be generated in this way (Circles look the same if they are rotated, crosses don't). This is a testament to the network's ability to fit to a dataset of high nonlinearity and dimensionality, finding its own hidden representations of how to identify circles and crosses.
+Using rough calculations, I have estimated that about 2 million unique crosses and 20 thousand unique circles can be generated in this way (circles look the same if they are rotated, crosses don't). This is a testament to the network's ability to fit to a dataset of high nonlinearity and dimensionality, finding its own hidden representations of how to identify circles and crosses.
 
 ## Features
 
