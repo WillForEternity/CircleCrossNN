@@ -1,6 +1,6 @@
-// Header file includes
+// Header includes
 #include <stdio.h>   // Standard input/output operations
-#include <stdlib.h>  // General utilities: memory allocation (malloc), random numbers, etc.
+#include <stdlib.h>  // General utilities: memory allocation, random numbers, etc.
 #include <math.h>    // Mathematical functions like exp() for sigmoid
 #include <time.h>    // Time-related functions, used for seeding random number generator
 #include <string.h>  // String manipulation functions like memcpy()
@@ -310,13 +310,14 @@ void draw_line(double* image, double m, double b, int thickness) {
 void generate_image(double* image, int* label) {
     // Initialize the image array to all zeros (black background)
     memset(image, 0, INPUT_SIZE * sizeof(double));
+
+    // Randomly determine the thickness of the lines (either 1 or 2 pixels)
+    int thickness = 1 + rand() % 3;
     
     // Randomly choose between generating a cross (0) or a circle (1)
     *label = rand() % 2;
     
     if (*label == 0) {  // Generate a cross
-        // Randomly determine the thickness of the lines (either 1 or 2 pixels)
-        int thickness = 1 + rand() % 2;
         
         // Choose a random intersection point for the cross
         // The range is limited to avoid the cross being too close to the edges
@@ -355,9 +356,8 @@ void generate_image(double* image, int* label) {
                 // Calculate the distance from the current pixel to the center of the circle
                 double distance = sqrt(pow(x - center_x, 2) + pow(y - center_y, 2));
                 
-                // If the distance is within 1 pixel of the radius, color the pixel white
-                // This creates a circular outline
-                if (fabs(distance - radius) < 1.0) {
+                // If the distance is within the thickness range of the radius, color the pixel white
+                if (fabs(distance - radius) < thickness / 2.0) {
                     image[y * 28 + x] = 1.0;
                 }
             }
