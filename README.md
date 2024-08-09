@@ -70,7 +70,9 @@ W[i-1] is the weight matrix between layer i-1 and i
 B[i-1] is the bias vector for layer i
 
 The nested loops perform dot product calculations between rows of the weight matrix and the activation vector from the previous layer.
-Backward Propagation
+
+### Backward Propagation
+
 The backward pass calculates gradients and updates weights:
 
 Output Layer Error:
@@ -142,7 +144,7 @@ So, why can we say that the derivative of sigmoid(x) is equal to (1 - sigmoid(x)
 
 I've provided the differentiation process for the sigmoid derivative, I apologize if the handwriting is difficult to read:
 
-![CircleCrossNN](notebook.png)
+![CircleCrossNN](notebook.jpg)
 
 ## Network Architecture (easily tunable)
 
