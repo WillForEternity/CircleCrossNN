@@ -16,7 +16,7 @@ Using rough calculations, I have estimated that about 2 million unique crosses a
 
 - **Dynamic Memory Allocation**: Utilizes `safe_malloc` for memory management.
 - **Sigmoid Activation Function**: Implements both sigmoid and its derivative.
-- **Matrix Multiplication, Forward Propagation, and Backward Propagation**: Custom implementations for training.
+- **Matrix Multiplication, Forward Propagation, and Backward Propagation**: All done by hand
 - **Adaptive Learning Rate**: Implements a decay-based learning rate adjustment.
 - **Random Image Generation**: Creates cross and circle images for training and testing.
 - **Console-based Visualization**: Displays generated images in the console.
@@ -160,7 +160,7 @@ I've provided the differentiation process for the sigmoid derivative, I apologiz
 
 ### Learning Rate Update
 
-The learning rate is dynamically adjusted during training using the `adjust_learning_rate` function:
+So, I noticed that at the start of training a high learning rate works really well for improving accuracy, however, near the end of training, the high learning rate could actually cause some discrepancies. Becuase of this, the learning rate is dynamically adjusted during training using the `adjust_learning_rate` function:
 
 ```c
 double adjust_learning_rate(double current_rate, int epoch, double error) {
