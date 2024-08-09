@@ -1,6 +1,6 @@
 # Circles and Crosses !! xoxo
 
-The universe is filled with patterns. Neural networks are structures created from linking together a large amount of very simple machines together and tuning their behavior based on their performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns. 
+The universe is filled with patterns. Neural networks are structures created from linking together a large amount of very simple machines (neurons) and tuning their individual behavior based on the entire network's performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns. 
 
 --
 
