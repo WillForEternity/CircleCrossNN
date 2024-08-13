@@ -1,5 +1,7 @@
 # Circles and Crosses !! xo
 
+For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth explanation:
+
 ## Introduction
 
 The universe is filled with patterns, and patterns can be described using mathematical functions. Neural networks are structures created from linking together a large amount of very simple machines (neurons) and tuning their individual behavior based on the entire network's performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns (by generating a function that could have potentially created that pattern, and therefore having the ability to generalize beyond the dataset it was given). I have demonstrated in a previous project (see `Scratchnn` and `ScratchnnV2` repository) that even an extremely simple neural network can easily fit to a nonlinear boolean function (e.g. NOR or NAND), which makes them Turing Complete. In addition, there are rigorous proofs that discuss the "universal approximation theorems" - regarding the functions in which networks of varying depth or width can fit to - which conclude that a network of a hypothetical infinite depth could fit to absolutely any function. Deep neural nets are useful!  
@@ -7,8 +9,6 @@ The universe is filled with patterns, and patterns can be described using mathem
 --
 
 `CircleCrossnnLRdecay.c` contains the code for creating a feed-forward fully-connected neural network in C. Upon running, it will generate a synthetic dataset of 28 x 28 = 784 "pixel" images out of `.` and `#` characters. The network’s depth, width, learning rate (scalar multiple of the negative gradient vector), and more are easily tunable.
-
-For instructions on how to run, scroll down to the bottom and find `Quick Run`. Now for, an in-depth introduction: 
 
 --
 
@@ -36,6 +36,25 @@ Using rough calculations, I have estimated that about 2 million unique crosses a
 - `generate_image`: Creates random cross or circle images for training/testing.
 - `draw_line`: Utility function for image generation.
 - `print_image`: Visualizes the generated images in the console.
+
+## Network Architecture (easily tunable using `TuneCLI.c` or by manually changing the code)
+
+1. Input Layer: 784 neurons (28x28 image)
+2. Hidden Layer 1: 64 neurons
+3. Hidden Layer 2: 20 neurons
+4. Hidden Layer 3: 20 neurons
+5. Output Layer: 2 neurons (cross or circle)
+
+## Training Process
+
+1. Initialize the network with random weights and biases.
+2. For each epoch:
+   - Generate random training examples.
+   - Perform forward propagation.
+   - Calculate error and perform backward propagation.
+   - Update weights and biases.
+   - Adjust learning rate.
+3. After training, test the network on new examples.
 
 ## Implementation of Mathematics (i.e. Matrix Operations, Nonlinear Functions, Forward and Backwards Prop, etc.)
 
@@ -181,25 +200,6 @@ double adjust_learning_rate(double current_rate, int epoch, double error) {
 This formula reduces the learning rate over time. As epoch increases, the denominator increases, causing new_rate to decrease.
 INITIAL_LEARNING_RATE (default: 0.9) sets the starting point.
 DECAY_RATE (default: 0.15) controls how quickly the rate decreases.
-
-## Network Architecture (easily tunable)
-
-1. Input Layer: 784 neurons (28x28 image)
-2. Hidden Layer 1: 64 neurons
-3. Hidden Layer 2: 20 neurons
-4. Hidden Layer 3: 20 neurons
-5. Output Layer: 2 neurons (cross or circle)
-
-## Training Process
-
-1. Initialize the network with random weights and biases.
-2. For each epoch:
-   - Generate random training examples.
-   - Perform forward propagation.
-   - Calculate error and perform backward propagation.
-   - Update weights and biases.
-   - Adjust learning rate.
-3. After training, test the network on new examples.
 
 ## Future Improvements 
 
