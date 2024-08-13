@@ -1,4 +1,6 @@
-# Circles and Crosses !! xoxo
+# Circles and Crosses !! xo
+
+## Introduction
 
 The universe is filled with patterns, and patterns can be described using mathematical functions. Neural networks are structures created from linking together a large amount of very simple machines (neurons) and tuning their individual behavior based on the entire network's performance. Using pretty much just linear matrix operations, nonlinear activation functions, and gradient based learning, we can create a mathematical object that can learn patterns (by generating a function that could potentially recreate that pattern). I have demonstrated in a previous project (see `Scratchnn` and `ScratchnnV2` repository) that even an extremely simple neural network can easily fit to a nonlinear boolean function (e.g. NOR or NAND), which makes them Turing Complete. In addition, there are rigorous proofs that discuss the "universal approximation theorems" - regarding the functions in which networks of varying depth or width can fit to - which conclude that a network of a hypothetical infinite depth could fit to absolutely any function. Deep neural nets are useful!  
 
