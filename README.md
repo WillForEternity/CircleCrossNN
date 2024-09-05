@@ -222,7 +222,7 @@ gcc -o circlecross circlecross.c -lm
 Then run the executable:
 
 ```bash
-./circlecross.c
+./circlecross
 ```
 
 The program will train the network and then test it on new examples, displaying the results in the command line console.
