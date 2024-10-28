@@ -201,13 +201,6 @@ This formula reduces the learning rate over time. As epoch increases, the denomi
 INITIAL_LEARNING_RATE (default: 0.9) sets the starting point.
 DECAY_RATE (default: 0.15) controls how quickly the rate decreases.
 
-## Future Improvements 
-
-- Add a third output class for no circle or cross 
-- Implement batch training rather than just stochastic gradient descent for improved efficiency.
-- Extend the network to classify more shapes or real-world images using a dataset.
-- Add convolutional layers.
-  
 
 # Quick Run
 
